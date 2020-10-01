@@ -1,0 +1,44 @@
+{
+  "name": "mr-essex/cubex-base",
+  "description": "Base for Cubex Projects",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kyle Essex",
+      "email": "kylegavinessex@hotmail.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+      "CubexBase\\Application\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-apcu": "*",
+    "ext-json": "*",
+    "cubex/framework": "~4.0",
+    "filp/whoops": "^2.3",
+    "packaged-ui/bem-component": "^1.1",
+    "packaged/dal": "^1.9",
+    "packaged/dispatch": "^2.11.0",
+    "packaged/glimpse": "^2.7",
+    "packaged/http": "^1.16",
+    "packaged-ui/fusion": "2.0.0-alpha9"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:packaged-ui/fusion.git"
+    }
+  ]
+}
